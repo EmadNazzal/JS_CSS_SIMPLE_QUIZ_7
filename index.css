@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  font-family: Tahoma, Arial;
+  margin: 0%;
+  padding: 0%;
+}
+
+.quiz-app {
+  margin: auto auto;
+  height: 100vh;
+  background-image: url(./pexels-gdtography-911738.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.quiz-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  /* margin-top: 100px; */
+}
+.quiz-info .category {
+  background-color: rgba(221, 221, 221, 0.39);
+  padding: 5px;
+}
+.quiz-area {
+  position: absolute;
+  padding: 30px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  margin-top: 30px;
+  background-color: rgba(245, 245, 220, 0.507);
+}
+.countdown {
+  color: brown;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px chartreuse;
+}
+.answer-area {
+  position: absolute;
+  padding: 15px;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  margin-top: 86px;
+}
+.answer-area .answer {
+  margin: 10px 0;
+  display: flex;
+  background-color: rgba(53, 95, 133, 0.397);
+  border-bottom: 1px solid blue;
+}
+.answer-area .answer label {
+  font-size: 2rem;
+  color: rgb(68, 67, 129);
+  cursor: pointer;
+}
+
+.submit-button {
+  position: absolute;
+  padding: 10px 15px;
+  width: 300px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid;
+  cursor: pointer;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  transition: 0.7s;
+}
+
+.submit-button:hover {
+  background-color: rgba(127, 255, 212, 0.377);
+  border-bottom: 2px solid grey;
+}
+
+.quiz-app .bullets {
+  background-color: rgba(255, 255, 255, 0.342);
+  display: flex;
+  padding: 20px;
+}
+.quiz-app .bullets .spans {
+  flex: 1;
+  display: flex;
+}
+.quiz-app .bullets .spans span {
+  width: 25px;
+  height: 25px;
+  background-color: #ddd;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.quiz-app .bullets .spans .on {
+  background-color: rgba(37, 62, 145, 0.842);
+}
+
+.results {
+  font-size: 50px;
+  font-weight: bolder;
+  border: 1px solid;
+  width: 360px;
+  padding: 7px;
+  margin-top: 175px;
+  margin-left: 450px;
+  display: none;
+}
